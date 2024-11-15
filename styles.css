@@ -69,6 +69,112 @@ header nav {
     }
 }
 
+#hero {
+    background-size: #F5EFE8;
+    color: #567C8D;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    background color: #FF7F50;
+    color: #FFF8F3;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    transistion: background-color 0.3s,box-shadow 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) ;
+}
+
+#hero .btn:hover {
+    background-color: #FFD700;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+    padding: 4em 0;
+    text-align: center;
+    background-color: #F7E7DC;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+ .about-content img {
+    border-radius: 50%;
+    max-width: 200px;
+ }
+
+ .about-content p {
+    max-width: 600px;
+    text-align: left;
+}
+
+#projects {
+    padding: 2em;
+    text-align: center;
+} 
+
+#project h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    padding: 0 2em;
+}
+
+.grid-item {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.grid-item p {
+    margin-top: 0.5em;
+    color: #567C8D;
+}
+
+}
+
+
+
 
 footer {
     background-color: #C8D9E6;
