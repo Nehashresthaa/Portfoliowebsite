@@ -23,7 +23,28 @@
             </div>
         </nav>
     </header>
-    <h1>Contact me</h1>
+    <main id="contact">
+        <section class="container">
+        <h1>Contact me</h1>
+        <p>Feel free to reach out via email or phone:</p>
+        <ul>
+            <li>Email: <a href="mailto:nehashrestha920@gmail.com">nehashrestha920@gmail.com</a></li>
+            <li>Phone: 9823363996</li>
+        </ul>
+        <form action="mailto:nehashrestha920@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>    
     <footer>
         <div class="container">
             <p>&copy; 2024 Neha Shrestha. All rights reserved.</p>

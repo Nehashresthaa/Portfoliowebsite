@@ -171,9 +171,62 @@ header nav {
     color: #567C8D;
 }
 
+#contact {
+    padding: 2em;
+    text-align: center;
 }
 
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
 
+#contact p {
+    font-size: 1.2em;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 1em;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+#contact input[type="submit"] {
+    padding: 0.7em 1.5em;
+    background-color: #C8D9E6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #758694;
+}
 
 
 footer {
