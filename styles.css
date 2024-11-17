@@ -194,18 +194,28 @@ nav ul li a {
 }
 
 #video {
-    padding: 2em;
+    padding: 2em 1em;
     text-align: center;
 }
 
 #video h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 1em;
+    color: #405D72;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px; 
 }
 
 #video iframe {
     border: none;
-    max-width: 100%;
+    width: 100%;
+    max-width: 640px;
     height: auto;
 }
 
@@ -274,5 +284,18 @@ footer {
 
     #contact form {
         padding: 0 10px;
+    }
+
+    #video iframe {
+        width: 100%; 
+        height: auto;
+    }
+
+    #video h1 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 0.8em;
     }
 }
