@@ -89,7 +89,6 @@ nav ul li a {
 
 .about-content {
     display: flex;
-/*    align-items: center;*/
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
@@ -182,15 +181,16 @@ nav ul li a {
 
 #contact input[type="submit"] {
     padding: 0.7em 1.5em;
-    background-color: #C8D9E6;
-    color: white;
+    background-color: #FF7F50;
+    color: #FFF8F3;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #contact input[type="submit"]:hover {
-    background-color: #758694;
+    background-color: #FFD700;
+    color: #FFF8F3;
 }
 
 #video {
