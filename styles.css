@@ -1,76 +1,43 @@
+/* Base styles for body to set theme */
 body {
-    background-color: #F5EFE8; 
-    color: #567C8D;
-    font-family: Arial, sans-serif;
+    background-color: #F5EFE8;  /*Light beige for the background*/
+    color: #567C8D;  /*teal color for the readability*/
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px; 
-    background-color: #C8D9E6;
-    position: relative;
+header {
+    background-color: #C8D9E6; /* soft blue coloe*/
+    color: #567C8D;
+    padding: 1em 0;
 }
 
-
-/* Default Styles for Navigation */
-.nav-menu {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    justify-content: center; 
-    align-items: center; 
-
+header h1 {
+    margin: 0;
+    text-align: center;
 }
 
-.nav-menu a {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #567C8D;
     text-decoration: none;
-    color: #008080; /* Teal */
-    font-size: 16px;
 }
 
-/* Hamburger icon: hidden on larger screens */
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #008080;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    transform: translateY(0);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none; 
-        flex-direction: column;
-        background-color: #87CEEB; 
-        padding: 10px;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 200px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-menu.show {
-        display: flex; 
-    }
-
-    .hamburger {
-        display: block; 
-        color: #008080; 
-    }
-}
 
 #hero {
-    background-size: #F5EFE8;
+    background-color: #F5EFE8; 
     color: #567C8D;
     text-align: center;
     padding: 100px 0;
@@ -95,12 +62,12 @@ header nav {
 #hero .btn {
     display: inline-block;
     padding: 0.7em 1.5em;
-    background color: #FF7F50;
+    background-color: #FF7F50;
     color: #FFF8F3;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1em;
-    transistion: background-color 0.3s,box-shadow 0.3s;
+    transition: background-color 0.3s,box-shadow 0.3s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) ;
 }
 
@@ -122,14 +89,11 @@ header nav {
 
 .about-content {
     display: flex;
-    align-items: center;
+/*    align-items: center;*/
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
 }
- .about-content img {
-    border-radius: 50%;
-    max-width: 200px;
- }
 
  .about-content p {
     max-width: 600px;
@@ -145,6 +109,7 @@ header nav {
     font-size: 2.5em;
     margin-bottom: 1em;
 }
+
  .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -228,10 +193,86 @@ header nav {
     background-color: #758694;
 }
 
+#video {
+    padding: 2em;
+    text-align: center;
+}
+
+#video h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#video iframe {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#sitereport {
+    padding: 2em;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sitereport h1, #sitereport h2 {
+    text-align: center;
+}
+
+#sitereport img {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
 
 footer {
     background-color: #C8D9E6;
     color: #567C8D;
     text-align: center;
     padding: 1em 0;
+}
+
+/*For the mobile respnsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    #hero h1 {
+        font-size: 2.5em; 
+    }
+
+    .about-content {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .grid-container {
+        padding: 0; 
+    }
+
+    .grid-item {
+        margin-bottom: 1.5em; 
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    #about h2 {
+        font-size: 2em;
+    } 
+
+    #projects .grid-container {
+        padding: 0 1em;
+    }
+    .grid-item{
+        padding: 0.5em;
+    }
+
+    #contact form {
+        padding: 0 10px;
+    }
 }
